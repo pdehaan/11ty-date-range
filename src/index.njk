@@ -1,0 +1,17 @@
+---
+title: Date Range Test
+date1: 2021-04-30
+date2: 2021-09-30
+---
+
+<h1>{{ pkg.name}}; {{ title }}</h1>
+
+<p data-date-date>{{ date1 | dateRange(date2) }}</p>
+{#- End date is undefined. Default to current date. #}
+<p data-date-undefined>{{ date1 | dateRange }}</p>
+{#- `date3` is undefined. Default to current date. #}
+<p data-undefined-date>{{ date3 | dateRange(date2) }}</p>
+<p data-string-string-asc>{{ "2002-04-19" | dateRange("2019-09-30") }}</p>
+<p data-string-string-desc>{{ "2019-09-30" | dateRange("2002-04-19") }}</p>
+
+<footer>@11ty/eleventy: {{ pkg.dependencies["@11ty/eleventy"] }}</footer>
