@@ -1,6 +1,6 @@
 {
   "name": "11ty-date-range",
-  "description": "",
+  "description": "Testing Intl.DateTimeFormat's formatRange with Eleventy.",
   "version": "1.0.0",
   "author": "Peter deHaan",
   "bugs": {
